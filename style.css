@@ -8,12 +8,14 @@ body {
     width: 200px;
     border-radius: 20%;
     border: 10px solid black;
-    margin: 2.5rem;
 }
 
+/* 2 boxes per line */
 .btn-container {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    justify-items: center;
 }
 
 /* Button colors */
@@ -33,7 +35,7 @@ body {
     background-color: green;
 }
 
-/* Flash effect for blinking */
+/* Flash effect */
 .flash {
     filter: brightness(2);
 }
