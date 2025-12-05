@@ -1,9 +1,9 @@
-body{
+body {
     text-align: center;
     background-color: aqua;
 }
 
-.btn{
+.btn {
     height: 200px;
     width: 200px;
     border-radius: 20%;
@@ -11,7 +11,29 @@ body{
     margin: 2.5rem;
 }
 
-.btn-container{
+.btn-container {
     display: flex;
     justify-content: center;
+}
+
+/* Button colors */
+.yellow {
+    background-color: yellow;
+}
+
+.red {
+    background-color: red;
+}
+
+.purple {
+    background-color: purple;
+}
+
+.green {
+    background-color: green;
+}
+
+/* Flash effect for blinking */
+.flash {
+    filter: brightness(2);
 }
