@@ -10,7 +10,7 @@ body {
     border: 10px solid black;
 }
 
-/* FORCE 2 × 2 GRID ALWAYS */
+/* 2×2 layout */
 .btn-container {
     display: grid !important;
     grid-template-columns: repeat(2, 1fr) !important;
@@ -20,23 +20,18 @@ body {
 }
 
 /* Button colors */
-.yellow {
-    background-color: yellow;
+.yellow { background-color: yellow; }
+.red { background-color: red; }
+.purple { background-color: purple; }
+.green { background-color: green; }
+
+/* Smooth + shorter blink animation */
+@keyframes smoothFlash {
+    0% { filter: brightness(1); }
+    50% { filter: brightness(2.2); }
+    100% { filter: brightness(1); }
 }
 
-.red {
-    background-color: red;
-}
-
-.purple {
-    background-color: purple;
-}
-
-.green {
-    background-color: green;
-}
-
-/* Flash effect */
 .flash {
-    filter: brightness(2);
+    animation: smoothFlash 0.4s ease-in-out;
 }
