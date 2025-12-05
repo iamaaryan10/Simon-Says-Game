@@ -10,12 +10,13 @@ body {
     border: 10px solid black;
 }
 
-/* 2 boxes per line */
+/* FORCE 2 × 2 GRID ALWAYS */
 .btn-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
     gap: 2rem;
-    justify-items: center;
+    justify-content: center;
+    place-items: center;
 }
 
 /* Button colors */
